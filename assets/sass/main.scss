@@ -3,8 +3,25 @@
 
 html, body {
   margin: 0;
+  color: black;
+  background: white;
+  font-size: 16px;
+  @media (min-width: $screen-md-min) {
+    font-size: 24px;
+  }
 }
 
-body {
-  padding: 100px;
+ul.nav.navbar-nav {
+  font-size: 16px;
+  @media (min-width: $screen-md-min) {
+    font-size: 24px;
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 16px;
+  @media (min-width: $screen-md-min) {
+    font-size: 24px;
+  }
 }
