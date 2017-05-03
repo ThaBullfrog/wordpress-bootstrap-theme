@@ -1,9 +1,37 @@
+
+
+// -- Mine -------------------------------------
+
+$mobile-font-size: 16px;
+$desktop-font-size: 20px;
+
+$norm-padding: 25px;
+
+$color1:        #00884B; // Green 50
+$color1-dark:   #12512e; // Green 70
+$color2:        #e39d14; // Gold 30
+$color2-dark:   #5b421c; // Gold 70
+$color3:        #71237C; // Purple 70
+$color4:        #008673; // Teal 50
+$grey:          #777677; // Gray 50
+$grey-dark:     #464646; // Gray 70
+$navbar-color:  $color1;
+
+// ---------------------------------------------
+
+
 //-- Bootstrap ---------------------------------
 
 $screen-md: 992px;
 $screen-md-min: $screen-md;
 $grid-float-breakpoint: $screen-md-min;
-//$navbar-default-bg: transparent;
+
+$navbar-border-radius: 0;
+$navbar-default-bg: $color1;
+$navbar-default-border: $navbar-default-bg;
+$navbar-default-color: white;
+$navbar-default-link-color: $navbar-default-color;
+$navbar-default-link-hover-color: $color2;
 $navbar-height: 50px;
 $navbar-desktop-height: 100px;
 
@@ -14,21 +42,3 @@ $navbar-desktop-padding-vertical: (($navbar-desktop-height - $line-height-comput
 
 //----------------------------------------------
 
-// -- Mine -------------------------------------
-
-$mobile-font-size: 16px;
-$desktop-font-size: 20px;
-
-$norm-padding: 25px;
-
-$color1:        #00884B; // Green 50
-$color1-dark:   #12512e; //Green 70
-$color2:        #e39d14; // Gold 30
-$color2-dark:   #5b421c; // Gold 70
-$color3:        #71237C; // Purple 70
-$color4:        #008673; // Teal 50
-$grey:          #777677; // Gray 50
-$grey-dark:     #464646; // Gray 70
-$navbar-color:  $color1;
-
-// ---------------------------------------------
