@@ -1,5 +1,8 @@
 <?php
 
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
+
 function bfg_setup_assets() {
 
   wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/compiled.css');
@@ -10,6 +13,12 @@ function bfg_setup_assets() {
 
 }
 
+function bfg_init() {
+  add_theme_support('menus');
+  register_nav_menu('primary', 'Primary navigation menu.');
+}
+
 add_action('wp_enqueue_scripts', 'bfg_setup_assets');
+add_action('init', 'bfg_init');
 
 ?>

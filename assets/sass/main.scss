@@ -1,27 +1,37 @@
 @import "variables";
 @import "bootstrap";
+@import "navbar_desktop_height";
 
 html, body {
   margin: 0;
   color: black;
   background: white;
-  font-size: 16px;
+  font-size: $mobile-font-size;
   @media (min-width: $screen-md-min) {
-    font-size: 24px;
+    font-size: $desktop-font-size;
   }
 }
 
 ul.nav.navbar-nav {
-  font-size: 16px;
+  font-size: $mobile-font-size;
   @media (min-width: $screen-md-min) {
-    font-size: 24px;
+    font-size: $desktop-font-size;
   }
 }
 
 .navbar-brand {
   font-weight: bold;
-  font-size: 16px;
+  font-size: ($mobile-font-size * 1.25);
   @media (min-width: $screen-md-min) {
-    font-size: 24px;
+    font-size: ($desktop-font-size * 1.25);
   }
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.menu {
+  @extend .nav;
+  @extend .navbar-nav;
 }

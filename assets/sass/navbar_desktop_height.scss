@@ -1,0 +1,35 @@
+.navbar {
+  min-height: $navbar-height;
+  @media (min-width: $grid-float-breakpoint) {
+    min-height: $navbar-desktop-height;
+  }
+}
+
+.navbar-brand {
+  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  height: $navbar-height;
+  @media (min-width: $grid-float-breakpoint) {
+    padding: $navbar-desktop-padding-vertical $navbar-padding-horizontal;
+    height: $navbar-desktop-height;
+  }
+}
+
+.navbar-nav {
+  margin: ($navbar-desktop-padding-vertical / 2) (-$navbar-padding-horizontal);
+
+  > li > a {
+    padding-top:    10px;
+    padding-bottom: 10px;
+    line-height: $line-height-computed;
+  }
+
+  // Uncollapse the nav
+  @media (min-width: $grid-float-breakpoint) {
+    > li {
+      > a {
+        padding-top:    $navbar-desktop-padding-vertical;
+        padding-bottom: $navbar-desktop-padding-vertical;
+      }
+    }
+  }
+}
