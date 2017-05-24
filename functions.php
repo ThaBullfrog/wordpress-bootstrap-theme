@@ -5,6 +5,8 @@ require_once('wp-bootstrap-navwalker.php');
 
 function bfg_setup_assets() {
 
+  wp_register_style('Open Sans', 'https://fonts.googleapis.com/css?family=Open+Sans');
+  wp_enqueue_style('Open Sans');
   wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/compiled.css');
 
   wp_register_script( 'jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', null, null, true );

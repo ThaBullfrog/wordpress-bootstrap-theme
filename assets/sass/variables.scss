@@ -32,9 +32,13 @@ $navbar-default-border: $navbar-default-bg;
 $navbar-default-color: white;
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-hover-color: $color2;
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-toggle-border-color: white;
+$navbar-default-toggle-icon-bar-bg: white;
 $navbar-height: 50px;
 $navbar-desktop-height: 100px;
 
+$font-family-base: 'Open Sans', sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.428571429;
 $line-height-computed: floor(($font-size-base * $line-height-base));
